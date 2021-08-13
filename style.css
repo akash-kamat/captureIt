@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: transparent;
+    
+}
+html { 
+    background: url("bg5.jpg") no-repeat center center fixed;
+    /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6) ), url('bg2.jpg'); */
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.title{
+    display: flex;
+    color: rgba(255, 255, 255, 0.938);
+    justify-content: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    margin-top: 30px;
+}
+
+.main{
+    /* display: flex; */
+    /* flex-direction: row; */
+    justify-content: center;
+    text-align: center;
+    margin: 6rem 0;
+}
+
+/* .main *{
+    margin: 5px;
+} */
+
+/* .input-group{
+    text-align: center;
+    margin: 0 auto;
+    width:25%;
+} */
+
+#url{
+    text-align: center;
+    margin: 0 -6px;
+    height: 29px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    outline: none;
+    /* border: none; */
+    padding: 5px 5px;
+    border-radius: 5px 0 0 5px;
+    border: 0.5px solid rgb(255, 255, 255);
+    /* border-bottom: 2px solid #00000096; */
+}
+
+
+#url::placeholder{
+    font-style: italic;
+
+}
+
+
+#capture{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(55, 192, 51);
+    color: white;
+    margin-right: 10px;
+    border-radius: 0 5px 5px 0;
+    border: 0.5px solid rgb(255, 255, 255);
+    outline: none;
+    width: 80px;
+    height: 29px;
+    transition: all 0.5s ease;
+
+}
+
+#download1{
+    font-family: 'Ubuntu', sans-serif;
+    
+    color: white;
+    /* margin-right: 10px; */
+    /* border-radius: 0 5px 5px 0; */
+    border: 0.1px solid rgb(255, 255, 255);
+    outline: none;
+    
+}
+
+#download2{
+    font-family: 'Ubuntu', sans-serif;
+    
+    color: white;
+    /* margin-right: 10px; */
+    /* border-radius: 0 5px 5px 0; */
+    border: 0.1px solid rgb(255, 255, 255);
+    outline: none;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    /* width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px; */
+}
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 6px 15px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+
+span{
+    font-size: 15px;
+    font-style: italic;
+}
+/* 
+#capture:hover{
+    transform: scale(1.1);
+
+
+} */
+
+
+.container{
+    width: 75%;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width:100%;
+    }
+    .capture{
+        border: 0px solid rgba(255, 255, 255, 0.74);
+    }
+    .modal-content {
+        width: 100%;
+        /* max-width: 200%; */
+      }
+    #download1{
+        margin-top: 10px;
+    }
+  }
+
+.capture{
+    padding: 3px;
+    margin: 10px auto;
+    border: 5px solid rgba(255, 255, 255, 0.74);
+}
+
+#options{
+    text-align: center;
+    margin-top: -65px;
+    margin-right: 22px;
+}
+
+label{
+    color: white;
+}
+
+h2{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    /* width: 80%; */
+    max-width: 80%;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: flex;
+    /* width: 80%; */
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 40px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
