@@ -1,9 +1,13 @@
-URL - https://akash-kamat.github.io/captureIt/
-***********************************************
+# CaptureIt
 
-A WebApp to capture screenshots webpages from any URL made using Flash api
+URL - https://akash-kamat.github.io/captureIt/
+
+### A WebApp to capture screenshots webpages from any URL made using Flash api
 --------------------------------------------------------------------------
 
 API Documentation : https://apiflash.com/documentation
 
+>Screenshot
+
+<img src="" alt="Screenshot">
 
