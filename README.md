@@ -9,5 +9,5 @@ API Documentation : https://apiflash.com/documentation
 
 >Screenshot
 
-<img src="" alt="Screenshot">
+<img src="https://github.com/akash-kamat/captureIt/blob/main/Captureit.PNG?raw=true" alt="Screenshot">
 
